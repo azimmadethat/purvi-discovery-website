@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initPresetDates();
   initNav();
   initScrollReveal();
   initTestimonials();
@@ -261,6 +262,39 @@ function initAvailabilityForm() {
     
     window.location.href = `${window.location.origin}/pages/book.html?${params.toString()}`;
   });
+}
+
+function initPresetDates() {
+  const today = new Date();
+  const formatDate = (d) => d.toISOString().split('T')[0];
+  
+  const checkinInput = document.getElementById('avail-checkin');
+  const checkoutInput = document.getElementById('avail-checkout');
+  
+  if (checkinInput) {
+    const nextWeek = new Date(today);
+    nextWeek.setDate(today.getDate() + 7);
+    checkinInput.value = formatDate(nextWeek);
+    checkinInput.min = formatDate(today);
+  }
+  
+  if (checkoutInput) {
+    const afterCheckin = new Date(today);
+    afterCheckin.setDate(today.getDate() + 9);
+    checkoutInput.value = formatDate(afterCheckin);
+    checkoutInput.min = checkinInput ? checkinInput.value : formatDate(today);
+  }
+  
+  if (checkinInput && checkoutInput) {
+    checkinInput.addEventListener('change', () => {
+      const minOut = new Date(checkinInput.value);
+      minOut.setDate(minOut.getDate() + 1);
+      checkoutInput.min = formatDate(minOut);
+      if (!checkoutInput.value || checkoutInput.value <= checkinInput.value) {
+        checkoutInput.value = formatDate(minOut);
+      }
+    });
+  }
 }
 
 function initBookingForm() {

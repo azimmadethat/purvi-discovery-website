@@ -840,6 +840,53 @@ body.nav-open {
   }
 }
 
+/* ─── MICRO-INTERACTIONS ─── */
+
+/* Button press effect */
+.btn:active {
+  transform: scale(0.97) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* Input focus glow */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+  border-color: var(--brass) !important;
+}
+
+/* Scroll indicator bounce */
+.hero__scroll {
+  animation: scrollBounce 2s ease-in-out 1.5s infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* Nav link underline slide */
+.nav__link {
+  position: relative;
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--brass);
+  transition: width 0.3s ease;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
 /* ─── HERO ─── */
 .hero {
   position: relative;
@@ -855,6 +902,7 @@ body.nav-open {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background-color: rgba(44, 26, 14, 0.5);
 }
 
 .hero__img {
@@ -899,9 +947,7 @@ body.nav-open {
   text-transform: uppercase;
   color: var(--brass);
   margin-bottom: 1.5rem;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease-out 0.3s forwards;
+  animation: fadeUp 0.5s ease-out 0.15s both;
   text-shadow: 0 1px 8px rgba(44, 26, 14, 0.4);
 }
 
@@ -913,9 +959,7 @@ body.nav-open {
   line-height: 1.08;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 1s ease-out 0.6s forwards;
+  animation: fadeUp 0.6s ease-out 0.3s both;
   text-shadow: 0 2px 20px rgba(44, 26, 14, 0.5), 0 4px 40px rgba(44, 26, 14, 0.3);
 }
 
@@ -933,9 +977,7 @@ body.nav-open {
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.6;
-  opacity: 0;
-  transform: translateY(25px);
-  animation: fadeUp 0.9s ease-out 0.9s forwards;
+  animation: fadeUp 0.5s ease-out 0.5s both;
   text-shadow: 0 1px 12px rgba(44, 26, 14, 0.4);
 }
 
@@ -945,9 +987,7 @@ body.nav-open {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.8s ease-out 1.2s forwards;
+  animation: fadeUp 0.5s ease-out 0.7s both;
 }
 
 .hero__scroll {
@@ -982,10 +1022,12 @@ body.nav-open {
 }
 
 @keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeIn {
+  from { opacity: 0; }
   to { opacity: 1; }
 }
 
@@ -1292,7 +1334,8 @@ body.nav-open {
 }
 
 .bungalow-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(44, 26, 14, 0.18);
   box-shadow: var(--shadow-deep);
 }
 
@@ -1474,11 +1517,17 @@ body.nav-open {
   cursor: pointer;
   opacity: 0;
   transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exp-card.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(44, 26, 14, 0.2);
 }
 
 .exp-card__img {
@@ -2199,11 +2248,18 @@ body.nav-open {
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
   transition: all var(--transition-spring);
   cursor: pointer;
+  animation: whatsappPulse 3s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7), 0 0 0 10px rgba(37, 211, 102, 0.1); }
 }
 
 .whatsapp-sticky:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+  animation: none;
 }
 
 .whatsapp-sticky svg {
@@ -2613,6 +2669,41 @@ body.nav-open {
   box-shadow: var(--shadow-warm);
 }
 
+/* Footer link hover */
+.footer__link {
+  position: relative;
+  display: inline-block;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--brass);
+  transition: width 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--brass);
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+/* Testimonial card hover */
+.testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-soft);
+}
+
 .exp-full-card__img-wrap {
   position: relative;
   height: 240px;
@@ -2975,14 +3066,16 @@ body.nav-open {
   background: var(--warm-white);
   font-size: 0.9rem;
   color: var(--deep-bark);
-  transition: border-color var(--transition-fast);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .form-input:focus,
 .form-textarea:focus,
 .form-select:focus {
   outline: none;
-  border-color: var(--tea-brown);
+  border-color: var(--brass);
+  box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+  transform: translateY(-1px);
 }
 
 .form-input::placeholder,
