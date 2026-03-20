@@ -557,6 +557,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem 1rem;
   flex-shrink: 0;
   border-bottom: 1px solid rgba(245, 240, 232, 0.08);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .nav__mobile-brand {
@@ -564,6 +566,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.nav__mobile-brand > div {
+  min-width: 0;
+  white-space: nowrap;
 }
 
 .nav__mobile-logo-text {
@@ -571,6 +580,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 700;
   color: var(--cream);
+  white-space: nowrap;
 }
 
 .nav__mobile-logo-sub {
@@ -580,11 +590,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: rgba(245, 240, 232, 0.5);
   display: block;
+  white-space: nowrap;
 }
 
 .nav__mobile-close {
   width: 36px;
   height: 36px;
+  min-width: 36px;
   border-radius: 50%;
   background: rgba(245, 240, 232, 0.1);
   border: 1px solid rgba(245, 240, 232, 0.2);
@@ -729,7 +741,8 @@ body.nav-open {
     font-size: 0.5rem;
   }
   .nav__mobile-top {
-    padding: 0.875rem 1rem;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
   }
   .nav__mobile-body {
     padding: 1.5rem 1rem 1.5rem;
@@ -739,7 +752,15 @@ body.nav-open {
     padding: 0.6rem 0;
   }
   .nav__mobile-logo-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+  }
+  .nav__mobile-logo-sub {
+    font-size: 0.5rem;
+  }
+  .nav__mobile-close {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
   }
   .container, .container--narrow {
     padding: 0 1rem;
@@ -792,7 +813,13 @@ body.nav-open {
     font-size: 1.2rem;
   }
   .nav__mobile-top {
-    padding: 0.75rem 0.875rem;
+    padding: 0.625rem 0.875rem;
+  }
+  .nav__mobile-logo-text {
+    font-size: 0.8rem;
+  }
+  .nav__mobile-logo-sub {
+    font-size: 0.45rem;
   }
   .nav__mobile-body {
     padding: 1rem 0.875rem 1rem;
