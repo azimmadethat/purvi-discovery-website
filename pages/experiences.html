@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences — Purvi Discovery</title>
+  <meta name="description" content="Immersive experiences in Assam: tea tours, bird watching, horse riding, cultural visits, and more. Curated by Purvi Discovery since 2000.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">
+        <div><div class="nav__logo-text">Purvi Discovery</div><span class="nav__logo-sub">Heritage Tea Bungalows</span></div>
+      </a>
+      <ul class="nav__links">
+        <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Bungalows</a>
+          <ul class="nav__dropdown-menu">
+            <li><a href="mancotta.html" class="nav__dropdown-link">Mancotta Heritage</a></li>
+            <li><a href="chowkidinghee.html" class="nav__dropdown-link">Chowkidinghee Heritage</a></li>
+            <li><a href="wathai.html" class="nav__dropdown-link">Wathai Heritage</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="experiences.html" class="nav__link">Experiences</a></li>
+        <li class="nav__item"><a href="book.html" class="nav__link">Book</a></li>
+        <li class="nav__item"><a href="who-we-are.html" class="nav__link">Who We Are</a></li>
+        <li class="nav__item"><a href="getting-here.html" class="nav__link">Getting Here</a></li>
+        <li class="nav__item"><a href="book.html" class="nav__link nav__link--cta">Book Your Stay</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile">
+    <div class="nav__mobile-top">
+      <a href="../index.html" class="nav__mobile-brand">
+        <div><div class="nav__mobile-logo-text">Purvi Discovery</div><span class="nav__mobile-logo-sub">Heritage Tea Bungalows</span></div>
+      </a>
+      <button class="nav__mobile-close" id="navMobileClose" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="nav__mobile-body">
+      <ul class="nav__mobile-links">
+        <li><a href="../index.html" class="nav__mobile-link">Home</a></li>
+        <li><a href="mancotta.html" class="nav__mobile-link">Mancotta Heritage</a></li>
+        <li><a href="chowkidinghee.html" class="nav__mobile-link">Chowkidinghee Heritage</a></li>
+        <li><a href="wathai.html" class="nav__mobile-link">Wathai Heritage</a></li>
+        <li><a href="experiences.html" class="nav__mobile-link nav__mobile-link--highlight">Experiences</a></li>
+        <li><a href="book.html" class="nav__mobile-link">Book Your Stay</a></li>
+        <li><a href="who-we-are.html" class="nav__mobile-link">Who We Are</a></li>
+        <li><a href="getting-here.html" class="nav__mobile-link">Getting Here</a></li>
+        <li><a href="contact.html" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav__mobile-footer">
+      <div class="nav__mobile-footer-contact">
+        <a href="mailto:purvidiscovery@purvidiscovery.com" class="nav__mobile-footer-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>purvidiscovery@purvidiscovery.com</a>
+        <a href="tel:+919435637641" class="nav__mobile-footer-link"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72"/></svg>+91 943 563 7641</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <img src="../assets/img/mancota-slides3.jpg" alt="Tea estate experiences in Assam" class="page-hero__img">
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__label">Beyond the Bungalow</p>
+      <h1 class="page-hero__title">Curated<br>Experiences</h1>
+      <p class="page-hero__desc">Each day unfolds at your pace. Walk the tea rows at dawn. Listen for gibbons at first light. End with a cup of the world's finest tea, poured by the hands that grew it.</p>
+    </div>
+  </section>
+
+  <!-- FILTER BAR -->
+  <div class="exp-filter" role="navigation" aria-label="Experience filters">
+    <div class="container">
+      <div class="exp-filter__inner">
+        <button class="exp-filter__btn active" data-filter="all">All Experiences</button>
+        <button class="exp-filter__btn" data-filter="tea">Tea Tours</button>
+        <button class="exp-filter__btn" data-filter="nature">Nature &amp; Birding</button>
+        <button class="exp-filter__btn" data-filter="adventure">Adventure</button>
+        <button class="exp-filter__btn" data-filter="culture">Culture &amp; Community</button>
+        <button class="exp-filter__btn" data-filter="culinary">Culinary</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCES GRID -->
+  <section class="exp-full" id="tea-tours">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Tea Tours</span>
+        <h2 class="section__title display-md">The Living Tea Garden</h2>
+        <p class="section__desc">Walk the rows. Pluck the leaf. Taste the difference between a first flush and a second flush. Tea isn't just a drink here — it's a way of life.</p>
+      </div>
+
+      <div class="exp-full__grid">
+        <article class="exp-full-card" data-category="tea">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/mancota-slides3.jpg" alt="Tea estate tour" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Half Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Tea &bull; Estate Tour</p>
+            <h3 class="exp-full-card__title">Tea Estate Walk &amp; Tasting</h3>
+            <p class="exp-full-card__desc">Walk through the tea rows with an estate worker as your guide. Learn to pluck, learn to grade, and end with a curated tasting session of five teas — each from a different harvest season.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">
+                Difficulty
+                <span class="exp-full-card__dots">
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot"></span>
+                  <span class="exp-full-card__dot"></span>
+                </span>
+              </span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-full-card" data-category="tea">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/chokindi-heritage-slide.jpg" alt="Singpho tribe visit" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Full Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Tea &bull; Cultural</p>
+            <h3 class="exp-full-card__title">Singpho Tribe &amp; Ingthong Village</h3>
+            <p class="exp-full-card__desc">Visit Ingthong village, home to the Singpho people, who have lived alongside the tea plant for centuries. Share their tea traditions, hear their stories, and understand a culture that the rest of the world rarely sees.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">
+                Difficulty
+                <span class="exp-full-card__dots">
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot"></span>
+                </span>
+              </span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-full-card" data-category="tea">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/mancota-slides2.jpg" alt="Majuli island" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Full Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Tea &bull; Heritage</p>
+            <h3 class="exp-full-card__title">Majuli — World's Largest River Island</h3>
+            <p class="exp-full-card__desc">A ferry crossing to Majuli, the world's largest inhabited river island, sitting in the Brahmaputra. Visit Vaishnavite monasteries, meet the mask-makers and satras, and taste the island's unique fermented rice beer.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">
+                Difficulty
+                <span class="exp-full-card__dots">
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot"></span>
+                </span>
+              </span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIRDWATCHING -->
+  <section class="section section--warm-white" id="birding">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Nature &amp; Birding</span>
+        <h2 class="section__title display-md">The Birdwatcher's Paradise</h2>
+        <p class="section__desc">Over 400 species recorded in Upper Assam. Hollock gibbons swinging overhead at dawn. The call of the great hornbill echoing through the forest. This is Northeast India at its wildest.</p>
+      </div>
+
+      <div class="exp-full__grid">
+        <article class="exp-full-card" data-category="nature">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/wathai-bungalow-5.jpg" alt="Birdwatching in Assam" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Half Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Birding &bull; Wildlife</p>
+            <h3 class="exp-full-card__title">Maguri Beel Wetlands</h3>
+            <p class="exp-full-card__desc">A vast wetland teeming with migratory and resident birds. Spot the Baikal teal, the white-bellied heron, and dozens of species that make this one of Assam's most important birding sites.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">Easy &bull; All ages</span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-full-card" data-category="nature">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/wathai-bungalow-6.jpg" alt="Hollock gibbon sighting" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Half Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Wildlife &bull; Gibbons</p>
+            <h3 class="exp-full-card__title">Barekuri Gibbon Sanctuary Walk</h3>
+            <p class="exp-full-card__desc">Walk through Barekuri village at dawn — the territory of the endangered Hollock gibbon. With an expert local guide, you'll track these primates through the canopy while learning about the villagers who share their forest with them.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">
+                Moderate
+                <span class="exp-full-card__dots">
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot"></span>
+                </span>
+              </span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-full-card" data-category="nature">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/wathai-bungalow-4.jpg" alt="Dihing Patkai" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Full Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Wildlife &bull; Nature</p>
+            <h3 class="exp-full-card__title">Dihing Patkai National Park</h3>
+            <p class="exp-full-card__desc">One of the last remaining lowland forests of its kind, Dihing Patkai is home to the clouded leopard, the Asian elephant, and over 500 species of plants. A full day immersed in one of India's most biodiverse regions.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">
+                Moderate-Strenuous
+                <span class="exp-full-card__dots">
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                  <span class="exp-full-card__dot filled"></span>
+                </span>
+              </span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVENTURE -->
+  <section class="exp-full" id="horse">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Adventure</span>
+        <h2 class="section__title display-md">On Horseback &amp; On Foot</h2>
+        <p class="section__desc">Dust-free trails through endless tea gardens. Golf courses that would make Augusta jealous. The Brahmaputra at your side. For those who want more than a slow walk.</p>
+      </div>
+
+      <div class="exp-full__grid">
+        <article class="exp-full-card" data-category="adventure">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/chokindi-heritage-slide.jpg" alt="Horse riding in tea gardens" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">2-3 Hours</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Adventure &bull; Horseback</p>
+            <h3 class="exp-full-card__title">Tea Garden Horse Ride</h3>
+            <p class="exp-full-card__desc">Ride along the banks of the Brahmaputra and through dust-free trails laid in lush green tea gardens. Experienced riders only — these are retired racehorses from the Retraining of Racehorses programme, spirited but well-mannered.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">Experienced Riders</span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp-full-card" data-category="adventure">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/chowkidinghee-bungalow-2.jpg" alt="Golf in Assam tea estates" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Half Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Adventure &bull; Golf</p>
+            <h3 class="exp-full-card__title">Tea Estate Golf</h3>
+            <p class="exp-full-card__desc">Some of the finest golf courses in Northeast India are woven through Upper Assam's tea estates. Polished by golfers from across the world, these courses offer a game unlike anything you've played — set against an endless green horizon.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">All levels</span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE & COMMUNITY -->
+  <section class="exp-full" id="culture">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Culture &amp; Community</span>
+        <h2 class="section__title display-md">People &amp; Traditions</h2>
+        <p class="section__desc">The culture of Upper Assam is inseparable from its tea. Visit Singpho villages, watch mekhla chadar weavers at work, and share tea with the people who have lived alongside this plant for centuries.</p>
+      </div>
+      <div class="exp-full__grid">
+        <article class="exp-full-card" data-category="culture">
+          <div class="exp-full-card__img-wrap">
+            <img src="../assets/img/chowkidinghee-bungalow-3.jpg" alt="Mekhla chadar weaving" class="exp-full-card__img" loading="lazy">
+            <span class="exp-full-card__duration">Half Day</span>
+          </div>
+          <div class="exp-full-card__content">
+            <p class="exp-full-card__type">Culture &bull; Handicrafts</p>
+            <h3 class="exp-full-card__title">Mekhla Chadars &amp; Weaving Centres</h3>
+            <p class="exp-full-card__desc">Visit the weaving centres of Upper Assam and watch the traditional mekhla chadar — Assam's most iconic textile — being woven from natural fibres. Each piece takes weeks to complete. You'll never look at fabric the same way again.</p>
+            <div class="exp-full-card__meta">
+              <span class="exp-full-card__difficulty">Easy &bull; All ages</span>
+              <a href="book.html" class="btn btn-secondary btn-sm">Enquire</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONAL NOTE -->
+  <section class="section section--tea">
+    <div class="container--narrow" style="text-align:center;">
+      <div class="reveal">
+        <span class="section__label" style="color:var(--brass);">Seasonal Calendar</span>
+        <h2 class="section__title" style="color:var(--cream);">When to Visit</h2>
+        <p class="section__desc">Every season in Assam has its own magic. Here's what each time of year offers.</p>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem;text-align:center;">
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--brass);">Mar–May</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.6);margin-bottom:0.5rem;">Spring</div>
+            <p style="font-size:0.85rem;color:rgba(245,240,232,0.75);">First flush tea. Warm days. Best for tea tours and birding.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--brass);">Jun–Sep</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.6);margin-bottom:0.5rem;">Monsoon</div>
+            <p style="font-size:0.85rem;color:rgba(245,240,232,0.75);">Lush green. Rivers full. Dibru Saikhowa at its wildest.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--brass);">Oct–Nov</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.6);margin-bottom:0.5rem;">Autumn</div>
+            <p style="font-size:0.85rem;color:rgba(245,240,232,0.75);">Second flush — the finest tea of the year. Pleasant weather.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--brass);">Dec–Feb</div>
+            <div style="font-family:var(--font-ui);font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(245,240,232,0.6);margin-bottom:0.5rem;">Winter</div>
+            <p style="font-size:0.85rem;color:rgba(245,240,232,0.75);">Migratory birds arrive. Cool mornings, misty evenings. Bihu festivals.</p>
+          </div>
+        </div>
+        <a href="book.html" class="btn btn-brass btn-lg" style="margin-top:3rem;">Plan Your Trip</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="36" height="36" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="20" stroke="#C9A84C" stroke-width="1.5"/><circle cx="21" cy="23" r="4" fill="#C9A84C"/></svg>
+            <div><div class="footer__logo-text">Purvi Discovery</div><span class="footer__logo-sub">Heritage Tea Bungalows &bull; Since 2000</span></div>
+          </div>
+          <p class="footer__about">Three colonial-era tea bungalows in Upper Assam offering immersive heritage, tea, and wildlife experiences since 2000.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/purvidiscoverynortheast/" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://www.instagram.com/purvidiscoveryofficial/" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Bungalows</h3>
+          <ul class="footer__links">
+            <li><a href="mancotta.html" class="footer__link">Mancotta Heritage</a></li>
+            <li><a href="chowkidinghee.html" class="footer__link">Chowkidinghee Heritage</a></li>
+            <li><a href="wathai.html" class="footer__link">Wathai Heritage</a></li>
+            <li><a href="book.html" class="footer__link">Book Your Stay</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Explore</h3>
+          <ul class="footer__links">
+            <li><a href="experiences.html" class="footer__link">All Experiences</a></li>
+            <li><a href="experiences.html#tea-tours" class="footer__link">Tea Tours</a></li>
+            <li><a href="experiences.html#birding" class="footer__link">Country Walks &amp; Birding</a></li>
+            <li><a href="experiences.html#horse" class="footer__link">Horse Riding</a></li>
+            <li><a href="experiences.html#culture" class="footer__link">Culture &amp; Festivals</a></li>
+            <li><a href="who-we-are.html" class="footer__link">About Us</a></li>
+            <li><a href="getting-here.html" class="footer__link">Getting Here</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__col-title">Contact</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Dibrugarh Office</span>
+            <p class="footer__contact-value">Purvi Discovery Pvt. Ltd.<br>P.O. Jalanagar, Dibrugarh-786005<br>Assam, India</p>
+          </div>
+          <div class="footer__contact-item" style="margin-top:1rem;">
+            <span class="footer__contact-label">Reach Us</span>
+            <a href="mailto:purvidiscovery@purvidiscovery.com" class="footer__contact-value">purvidiscovery@purvidiscovery.com</a>
+            <a href="tel:+919435637641" class="footer__contact-value">+91 943 563 7641</a>
+            <a href="https://wa.me/917099895338" class="footer__contact-value" style="color:var(--brass);">WhatsApp: +91 70998 95338</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__divider"></div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Purvi Discovery Pvt. Ltd. All rights reserved. Heritage Tea Bungalows, Upper Assam.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms &amp; Conditions</a>
+          <a href="#" class="footer__legal-link">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917099895338" class="whatsapp-sticky" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
