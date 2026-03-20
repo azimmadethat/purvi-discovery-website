@@ -1297,15 +1297,6 @@ select:focus-visible {
   .story__img-main {
     height: 350px;
   }
-  .story__img-accent {
-    right: 0;
-    bottom: 0;
-    width: 120px;
-    height: 150px;
-    border-width: 3px;
-    border-right: none;
-    border-bottom: none;
-  }
 }
 
 /* ─── BUNGALOWS SHOWCASE ─── */
@@ -1489,13 +1480,7 @@ select:focus-visible {
     height: 240px;
   }
   .story__img-accent {
-    width: 80px;
-    height: 100px;
-    right: 0;
-    bottom: 0;
-    border-width: 2px;
-    border-right: none;
-    border-bottom: none;
+    display: none;
   }
   .story__annotation {
     display: none;
